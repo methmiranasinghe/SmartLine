@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 
 from bson import ObjectId
-from app.databses import users_collection
+from backend.app.databases import users_collection
 from app.schemas.user_schema import UserCreate
 from app.schemas.auth_schema import LoginRequest
 from app.utils.auth import hashpassword, verify_password, create_access_token
